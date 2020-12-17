@@ -44,4 +44,4 @@ let s:p.tabline.middle = [ [ s:nord5, s:nord3 ] ]
 let s:p.tabline.right = [ [ s:nord5, s:nord3 ] ]
 let s:p.tabline.tabsel = [ [ s:nord1, s:nord8 ] ]
 
-let g:lightline#colorscheme#nord-dark#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#nordd#palette = lightline#colorscheme#flatten(s:p)
