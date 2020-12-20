@@ -17,17 +17,20 @@ let s:nord_vim_version="0.15.0"
 set background=light
 
 let s:nord0_gui = "#E5E9F0"
+let s:nord0_gui_bright = "#ECEFF4"
 let s:nord1_gui = "#D8DEE9"
 let s:nord2_gui = "#D8DEE9"
 let s:nord3_gui = "#7b88a1"
 let s:nord3_gui_bright = "#7b88a1"
 let s:nord4_gui = "#434C5E"
+let s:nord4_gui_bright = "#4C566A"
 let s:nord5_gui = "#3B4252"
 let s:nord6_gui = "#2E3440"
 let s:nord7_gui = "#81A1C1"
+let s:nord7_gui_bright = "#8FBCBB"
 let s:nord8_gui = "#81A1C1"
+let s:nord8_gui_bright = "#88C0D0"
 let s:nord9_gui = "#5E81AC"
-"let s:nord9_gui = "#3B4252"
 let s:nord10_gui = "#5E81AC"
 let s:nord11_gui = "#99324B"
 let s:nord12_gui = "#AC4426"
@@ -35,19 +38,43 @@ let s:nord13_gui = "#9A7500"
 let s:nord14_gui = "#4F894C"
 let s:nord15_gui = "#842879"
 
-let s:nord1_term = "0"
+
+"  normal:
+"0    black: '#3b4252'
+"1    red: '#bf616a'
+"2    green: '#a3be8c'
+"3    yellow: '#ebcb8b'
+"4    blue: '#81a1c1'
+"5    magenta: '#b48ead'
+"6    cyan: '#88c0d0'
+"7    white: '#e5e9f0'
+"  bright:
+"8    black: '#4c566a'
+"9    red: '#bf616a'
+"10    green: '#a3be8c'
+"11    yellow: '#ebcb8b'
+"12    blue: '#81a1c1'
+"13    magenta: '#b48ead'
+"14    cyan: '#8fbcbb'
+"15    white: '#eceff4'
+"  dim:
+
+let s:nord0_term = "7"
+let s:nord1_term = "7"
+let s:nord2_term = "7"
 let s:nord3_term = "8"
-let s:nord5_term = "7"
-let s:nord6_term = "15"
-let s:nord7_term = "14"
-let s:nord8_term = "6"
-let s:nord9_term = "4"
-let s:nord10_term = "12"
-let s:nord11_term = "1"
-let s:nord12_term = "11"
-let s:nord13_term = "3"
-let s:nord14_term = "2"
-let s:nord15_term = "5"
+let s:nord4_term = "8"
+let s:nord5_term = "0"
+let s:nord6_term = "0"
+let s:nord7_term = "4"
+let s:nord8_term = "4"
+let s:nord9_term = "6"
+let s:nord10_term = "6"
+let s:nord11_term = "9"
+let s:nord12_term = "9"
+let s:nord13_term = "11"
+let s:nord14_term = "10"
+let s:nord15_term = "13"
 
 let s:nord3_gui_brightened = [
   \ s:nord3_gui,
@@ -172,7 +199,7 @@ call s:hi("CursorLine", "", s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
 call s:hi("Error", s:nord4_gui, s:nord11_gui, "", s:nord11_term, "", "")
 call s:hi("iCursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("LineNr", s:nord3_gui, "NONE", s:nord3_term, "NONE", "", "")
-call s:hi("MatchParen", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "", "")
+call s:hi("MatchParen", s:nord4_gui_bright, s:nord2_gui, s:nord8_term, s:nord3_term, "", "")
 call s:hi("NonText", s:nord2_gui, "", s:nord3_term, "", "", "")
 call s:hi("Normal", s:nord4_gui, s:nord0_gui, "NONE", "NONE", "", "")
 call s:hi("PMenu", s:nord4_gui, s:nord2_gui, "NONE", s:nord1_term, "NONE", "")
@@ -191,6 +218,8 @@ call s:hi("healthError", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term,
 call s:hi("healthSuccess", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
 call s:hi("healthWarning", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
 call s:hi("TermCursorNC", "", s:nord1_gui, "", s:nord1_term, "", "")
+
+call s:hi("QuickFixLine", s:nord6_gui, s:nord1_gui, s:nord6_term, s:nord1_term, "", "")
 
 "+- Vim 8 Terminal Colors -+
 if has('terminal')
