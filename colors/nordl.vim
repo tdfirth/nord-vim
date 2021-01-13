@@ -16,7 +16,7 @@ let g:colors_name = "nordl"
 let s:nord_vim_version="0.15.0"
 set background=light
 
-let s:nord0_gui = "#E5E9F0"
+let s:nord0_gui = "ECEFF4"
 let s:nord0_gui_bright = "#ECEFF4"
 let s:nord1_gui = "#D8DEE9"
 let s:nord2_gui = "#D8DEE9"
@@ -26,9 +26,11 @@ let s:nord4_gui = "#434C5E"
 let s:nord4_gui_bright = "#4C566A"
 let s:nord5_gui = "#3B4252"
 let s:nord6_gui = "#2E3440"
-let s:nord7_gui = "#81A1C1"
+"let s:nord7_gui = "#81A1C1"
+let s:nord7_gui = "#5E81AC"
 let s:nord7_gui_bright = "#8FBCBB"
-let s:nord8_gui = "#81A1C1"
+"let s:nord8_gui = "#81A1C1"
+let s:nord8_gui = "#5E81AC"
 let s:nord8_gui_bright = "#88C0D0"
 let s:nord9_gui = "#5E81AC"
 let s:nord10_gui = "#5E81AC"
@@ -37,6 +39,7 @@ let s:nord12_gui = "#AC4426"
 let s:nord13_gui = "#9A7500"
 let s:nord14_gui = "#4F894C"
 let s:nord15_gui = "#842879"
+let s:nord16_gui = "#E5E9F0"
 
 
 "  normal:
@@ -193,7 +196,7 @@ call s:hi("Italic", "", "", "", "", s:italic, "")
 call s:hi("Underline", "", "", "", "", s:underline, "")
 
 "+--- Editor ---+
-call s:hi("ColorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
+call s:hi("ColorColumn", "", s:nord16_gui, "NONE", s:nord1_term, "", "")
 call s:hi("Cursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("CursorLine", "", s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
 call s:hi("Error", s:nord4_gui, s:nord11_gui, "", s:nord11_term, "", "")
