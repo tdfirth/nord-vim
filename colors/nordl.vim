@@ -17,9 +17,11 @@ let s:nordl_vim_version="0.15.0"
 set background=light
 
 " Background
-let s:nordl0_gui = "ECEFF4"
+"let s:nordl0_gui = "#ECEFF4"
+let s:nordl0_gui = "#FFFFFF"
 " Dark White
-let s:nordl1_gui = "#D8DEE9"
+" let s:nordl1_gui = "#D8DEE9"
+ let s:nordl1_gui = "#ECEFF4"
 " Dark White
 let s:nordl2_gui = "#D8DEE9"
 " Grey
@@ -241,17 +243,17 @@ call s:hi("Italic", "", "", "", "", s:italic, "")
 call s:hi("Underline", "", "", "", "", s:underline, "")
 
 "+--- Editor ---+
-call s:hi("ColorColumn", "", s:nordl16_gui, "NONE", s:nordl1_term, "", "")
+call s:hi("ColorColumn", "", s:nordl1_gui, "NONE", s:nordl1_term, "", "")
 call s:hi("Cursor", s:nordl0_gui, s:nordl4_gui, "", "NONE", "", "")
-call s:hi("CursorLine", "", s:nordl16_gui, "NONE", s:nordl1_term, "NONE", "")
+call s:hi("CursorLine", "", s:nordl1_gui, "NONE", s:nordl1_term, "NONE", "")
 call s:hi("Error", s:nordl0_gui, s:nordl11_gui, "", s:nordl11_term, "", "")
 call s:hi("iCursor", s:nordl0_gui, s:nordl4_gui, "", "NONE", "", "")
 call s:hi("LineNr", s:nordl3_gui, "NONE", s:nordl3_term, "NONE", "", "")
 call s:hi("MatchParen", s:nordl4_gui_bright, s:nordl2_gui, s:nordl8_term, s:nordl3_term, "", "")
 call s:hi("NonText", s:nordl2_gui, "", s:nordl3_term, "", "", "")
 call s:hi("Normal", s:nordl4_gui, s:nordl0_gui, "NONE", "NONE", "", "")
-call s:hi("PMenu", s:nordl4_gui, s:nordl16_gui, "NONE", s:nordl1_term, "NONE", "")
-call s:hi("PmenuSbar", s:nordl4_gui, s:nordl16_gui, "NONE", s:nordl1_term, "", "")
+call s:hi("PMenu", s:nordl4_gui, s:nordl1_gui, "NONE", s:nordl1_term, "NONE", "")
+call s:hi("PmenuSbar", s:nordl4_gui, s:nordl1_gui, "NONE", s:nordl1_term, "", "")
 call s:hi("PMenuSel", s:nordl4_gui, s:nordl2_gui, s:nordl8_term, s:nordl3_term, "", "")
 call s:hi("PmenuThumb", s:nordl8_gui, s:nordl2_gui, "NONE", s:nordl3_term, "", "")
 call s:hi("SpecialKey", s:nordl3_gui, "", s:nordl3_term, "", "", "")
@@ -329,8 +331,8 @@ call s:hi("WarningMsg", s:nordl0_gui, s:nordl13_gui, s:nordl1_term, s:nordl13_te
 call s:hi("WildMenu", s:nordl8_gui, s:nordl1_gui, s:nordl8_term, s:nordl1_term, "", "")
 
 "+--- Search ---+
-call s:hi("IncSearch", s:nordl6_gui, s:nordl10_gui, s:nordl6_term, s:nordl10_term, s:underline, "")
-call s:hi("Search", s:nordl1_gui, s:nordl8_gui, s:nordl1_term, s:nordl8_term, "NONE", "")
+call s:hi("IncSearch", s:nordl0_gui, s:nordl8_gui_bright, s:nordl6_term, s:nordl10_term, "NONE", "")
+call s:hi("Search", s:nordl0_gui, s:nordl8_gui_bright, s:nordl1_term, s:nordl8_term, "NONE", "")
 
 "+--- Tabs ---+
 call s:hi("TabLine", s:nordl4_gui, s:nordl1_gui, "NONE", s:nordl1_term, "NONE", "")
