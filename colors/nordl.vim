@@ -13,34 +13,79 @@ if version > 580
 endif
 
 let g:colors_name = "nordl"
-let s:nord_vim_version="0.15.0"
+let s:nordl_vim_version="0.15.0"
 set background=light
 
-let s:nord0_gui = "ECEFF4"
-let s:nord0_gui_bright = "#ECEFF4"
-let s:nord1_gui = "#D8DEE9"
-let s:nord2_gui = "#D8DEE9"
-let s:nord3_gui = "#7b88a1"
-let s:nord3_gui_bright = "#7b88a1"
-let s:nord4_gui = "#434C5E"
-let s:nord4_gui_bright = "#4C566A"
-let s:nord5_gui = "#3B4252"
-let s:nord6_gui = "#2E3440"
-"let s:nord7_gui = "#81A1C1"
-let s:nord7_gui = "#5E81AC"
-let s:nord7_gui_bright = "#8FBCBB"
-"let s:nord8_gui = "#81A1C1"
-let s:nord8_gui = "#5E81AC"
-let s:nord8_gui_bright = "#88C0D0"
-let s:nord9_gui = "#5E81AC"
-let s:nord10_gui = "#5E81AC"
-let s:nord11_gui = "#99324B"
-let s:nord12_gui = "#AC4426"
-let s:nord13_gui = "#9A7500"
-let s:nord14_gui = "#4F894C"
-let s:nord15_gui = "#842879"
-let s:nord16_gui = "#E5E9F0"
+" Background
+let s:nordl0_gui = "ECEFF4"
+" Dark White
+let s:nordl1_gui = "#D8DEE9"
+" Dark White
+let s:nordl2_gui = "#D8DEE9"
+" Grey
+let s:nordl3_gui = "#7B88A1"
+" Grey
+let s:nordl3_gui_bright = "#7B88A1"
+" Light Grey
+let s:nordl4_gui = "#434C5E"
+" Lightest Grey
+let s:nordl4_gui_bright = "#4C566A"
+" Dark Grey
+let s:nordl5_gui = "#3B4252"
+" Darkest Grey
+let s:nordl6_gui = "#2E3440"
+" Darkest Blue
+let s:nordl7_gui = "#5E81AC"
+" Turquoise
+let s:nordl7_gui_bright = "#8FBCBB"
+" Darkest Blue
+let s:nordl8_gui = "#5272AF"
+" Light Blue
+let s:nordl8_gui_bright = "#88C0D0"
+" Darkest Blue
+let s:nordl9_gui = "#5272AF"
+" Darkest Blue
+let s:nordl10_gui = "#5272AF"
+" Red
+let s:nordl11_gui = "#99324B"
+" Orange
+let s:nordl12_gui = "#AC4426"
+" Yellow
+let s:nordl13_gui = "#9A7500"
+" Green
+let s:nordl14_gui = "#4F894C"
+" Magenta
+let s:nordl15_gui = "#97365B"
+" Off White
+let s:nordl16_gui = "#E5E9F0"
 
+  " ;; name        default   256       16
+  " ((bg         '("#E5E9F0" nil       nil))
+  "  (bg-alt     '("#D8DEE9" nil       nil))
+  "  (base0      '("#F0F4FC" "black"   "black"))
+  "  (base1      '("#E3EAF5" "#1e1e1e" "brightblack"))
+  "  (base2      '("#D8DEE9" "#2e2e2e" "brightblack"))
+  "  (base3      '("#C2D0E7" "#262626" "brightblack"))
+  "  (base4      '("#B8C5DB" "#3f3f3f" "brightblack"))
+  "  (base5      '("#AEBACF" "#525252" "brightblack"))
+  "  (base6      '("#A1ACC0" "#6b6b6b" "brightblack"))
+  "  (base7      '("#60728C" "#979797" "brightblack"))
+  "  (base8      '("#485163" "#dfdfdf" "white"))
+  "  (fg         '("#3B4252" "#2d2d2d" "white"))
+  "  (fg-alt     '("#2E3440" "#bfbfbf" "brightwhite"))
+
+  "  (grey base4)
+  "  (red       '("#99324B" "#ff6655" "red"))
+  "  (orange    '("#AC4426" "#dd8844" "brightred"))
+  "  (green     '("#4F894C" "#99bb66" "green"))
+  "  (teal      '("#29838D" "#44b9b1" "brightgreen"))
+  "  (yellow    '("#9A7500" "#ECBE7B" "yellow"))
+  "  (blue      '("#3B6EA8" "#51afef" "brightblue"))
+  "  (dark-blue '("#5272AF" "#2257A0" "blue"))
+  "  (magenta   '("#97365B" "#c678dd" "magenta"))
+  "  (violet    '("#842879" "#a9a1e1" "brightmagenta"))
+  "  (cyan      '("#398EAC" "#46D9FF" "brightcyan"))
+  "  (dark-cyan '("#2C7088" "#5699AF" "cyan"))
 
 "  normal:
 "0    black: '#3b4252'
@@ -62,25 +107,25 @@ let s:nord16_gui = "#E5E9F0"
 "15    white: '#eceff4'
 "  dim:
 
-let s:nord0_term = "7"
-let s:nord1_term = "7"
-let s:nord2_term = "7"
-let s:nord3_term = "8"
-let s:nord4_term = "8"
-let s:nord5_term = "0"
-let s:nord6_term = "0"
-let s:nord7_term = "4"
-let s:nord8_term = "4"
-let s:nord9_term = "6"
-let s:nord10_term = "6"
-let s:nord11_term = "9"
-let s:nord12_term = "9"
-let s:nord13_term = "11"
-let s:nord14_term = "10"
-let s:nord15_term = "13"
+let s:nordl0_term = "7"
+let s:nordl1_term = "7"
+let s:nordl2_term = "7"
+let s:nordl3_term = "8"
+let s:nordl4_term = "8"
+let s:nordl5_term = "0"
+let s:nordl6_term = "0"
+let s:nordl7_term = "4"
+let s:nordl8_term = "4"
+let s:nordl9_term = "6"
+let s:nordl10_term = "6"
+let s:nordl11_term = "9"
+let s:nordl12_term = "9"
+let s:nordl13_term = "11"
+let s:nordl14_term = "10"
+let s:nordl15_term = "13"
 
-let s:nord3_gui_brightened = [
-  \ s:nord3_gui,
+let s:nordl3_gui_brightened = [
+  \ s:nordl3_gui,
   \ "#4e586d",
   \ "#505b70",
   \ "#525d73",
@@ -196,159 +241,159 @@ call s:hi("Italic", "", "", "", "", s:italic, "")
 call s:hi("Underline", "", "", "", "", s:underline, "")
 
 "+--- Editor ---+
-call s:hi("ColorColumn", "", s:nord16_gui, "NONE", s:nord1_term, "", "")
-call s:hi("Cursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
-call s:hi("CursorLine", "", s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
-call s:hi("Error", s:nord4_gui, s:nord11_gui, "", s:nord11_term, "", "")
-call s:hi("iCursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
-call s:hi("LineNr", s:nord3_gui, "NONE", s:nord3_term, "NONE", "", "")
-call s:hi("MatchParen", s:nord4_gui_bright, s:nord2_gui, s:nord8_term, s:nord3_term, "", "")
-call s:hi("NonText", s:nord2_gui, "", s:nord3_term, "", "", "")
-call s:hi("Normal", s:nord4_gui, s:nord0_gui, "NONE", "NONE", "", "")
-call s:hi("PMenu", s:nord4_gui, s:nord2_gui, "NONE", s:nord1_term, "NONE", "")
-call s:hi("PmenuSbar", s:nord4_gui, s:nord2_gui, "NONE", s:nord1_term, "", "")
-call s:hi("PMenuSel", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "", "")
-call s:hi("PmenuThumb", s:nord8_gui, s:nord3_gui, "NONE", s:nord3_term, "", "")
-call s:hi("SpecialKey", s:nord3_gui, "", s:nord3_term, "", "", "")
-call s:hi("SpellBad", s:nord11_gui, s:nord0_gui, s:nord11_term, "NONE", "undercurl", s:nord11_gui)
-call s:hi("SpellCap", s:nord13_gui, s:nord0_gui, s:nord13_term, "NONE", "undercurl", s:nord13_gui)
-call s:hi("SpellLocal", s:nord5_gui, s:nord0_gui, s:nord5_term, "NONE", "undercurl", s:nord5_gui)
-call s:hi("SpellRare", s:nord6_gui, s:nord0_gui, s:nord6_term, "NONE", "undercurl", s:nord6_gui)
-call s:hi("Visual", "", s:nord2_gui, "", s:nord1_term, "", "")
-call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord1_term, "", "")
+call s:hi("ColorColumn", "", s:nordl16_gui, "NONE", s:nordl1_term, "", "")
+call s:hi("Cursor", s:nordl0_gui, s:nordl4_gui, "", "NONE", "", "")
+call s:hi("CursorLine", "", s:nordl16_gui, "NONE", s:nordl1_term, "NONE", "")
+call s:hi("Error", s:nordl0_gui, s:nordl11_gui, "", s:nordl11_term, "", "")
+call s:hi("iCursor", s:nordl0_gui, s:nordl4_gui, "", "NONE", "", "")
+call s:hi("LineNr", s:nordl3_gui, "NONE", s:nordl3_term, "NONE", "", "")
+call s:hi("MatchParen", s:nordl4_gui_bright, s:nordl2_gui, s:nordl8_term, s:nordl3_term, "", "")
+call s:hi("NonText", s:nordl2_gui, "", s:nordl3_term, "", "", "")
+call s:hi("Normal", s:nordl4_gui, s:nordl0_gui, "NONE", "NONE", "", "")
+call s:hi("PMenu", s:nordl4_gui, s:nordl16_gui, "NONE", s:nordl1_term, "NONE", "")
+call s:hi("PmenuSbar", s:nordl4_gui, s:nordl16_gui, "NONE", s:nordl1_term, "", "")
+call s:hi("PMenuSel", s:nordl4_gui, s:nordl2_gui, s:nordl8_term, s:nordl3_term, "", "")
+call s:hi("PmenuThumb", s:nordl8_gui, s:nordl2_gui, "NONE", s:nordl3_term, "", "")
+call s:hi("SpecialKey", s:nordl3_gui, "", s:nordl3_term, "", "", "")
+call s:hi("SpellBad", s:nordl11_gui, s:nordl0_gui, s:nordl11_term, "NONE", "undercurl", s:nordl11_gui)
+call s:hi("SpellCap", s:nordl13_gui, s:nordl0_gui, s:nordl13_term, "NONE", "undercurl", s:nordl13_gui)
+call s:hi("SpellLocal", s:nordl5_gui, s:nordl0_gui, s:nordl5_term, "NONE", "undercurl", s:nordl5_gui)
+call s:hi("SpellRare", s:nordl6_gui, s:nordl0_gui, s:nordl6_term, "NONE", "undercurl", s:nordl6_gui)
+call s:hi("Visual", "", s:nordl2_gui, "", s:nordl1_term, "", "")
+call s:hi("VisualNOS", "", s:nordl2_gui, "", s:nordl1_term, "", "")
 "+- Neovim Support -+
-call s:hi("healthError", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
-call s:hi("healthSuccess", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
-call s:hi("healthWarning", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
-call s:hi("TermCursorNC", "", s:nord1_gui, "", s:nord1_term, "", "")
+call s:hi("healthError", s:nordl11_gui, s:nordl1_gui, s:nordl11_term, s:nordl1_term, "", "")
+call s:hi("healthSuccess", s:nordl14_gui, s:nordl1_gui, s:nordl14_term, s:nordl1_term, "", "")
+call s:hi("healthWarning", s:nordl13_gui, s:nordl1_gui, s:nordl13_term, s:nordl1_term, "", "")
+call s:hi("TermCursorNC", "", s:nordl1_gui, "", s:nordl1_term, "", "")
 
-call s:hi("QuickFixLine", s:nord6_gui, s:nord1_gui, s:nord6_term, s:nord1_term, "", "")
+call s:hi("QuickFixLine", s:nordl6_gui, s:nordl1_gui, s:nordl6_term, s:nordl1_term, "", "")
 
 "+- Vim 8 Terminal Colors -+
 if has('terminal')
-  let g:terminal_ansi_colors = [s:nord1_gui, s:nord11_gui, s:nord14_gui, s:nord13_gui, s:nord9_gui, s:nord15_gui, s:nord8_gui, s:nord5_gui, s:nord3_gui, s:nord11_gui, s:nord14_gui, s:nord13_gui, s:nord9_gui, s:nord15_gui, s:nord7_gui, s:nord6_gui]
+  let g:terminal_ansi_colors = [s:nordl1_gui, s:nordl11_gui, s:nordl14_gui, s:nordl13_gui, s:nordl9_gui, s:nordl15_gui, s:nordl8_gui, s:nordl5_gui, s:nordl3_gui, s:nordl11_gui, s:nordl14_gui, s:nordl13_gui, s:nordl9_gui, s:nordl15_gui, s:nordl7_gui, s:nordl6_gui]
 endif
 
 "+- Neovim Terminal Colors -+
 if has('nvim')
-  let g:terminal_color_0 = s:nord1_gui
-  let g:terminal_color_1 = s:nord11_gui
-  let g:terminal_color_2 = s:nord14_gui
-  let g:terminal_color_3 = s:nord13_gui
-  let g:terminal_color_4 = s:nord9_gui
-  let g:terminal_color_5 = s:nord15_gui
-  let g:terminal_color_6 = s:nord8_gui
-  let g:terminal_color_7 = s:nord5_gui
-  let g:terminal_color_8 = s:nord3_gui
-  let g:terminal_color_9 = s:nord11_gui
-  let g:terminal_color_10 = s:nord14_gui
-  let g:terminal_color_11 = s:nord13_gui
-  let g:terminal_color_12 = s:nord9_gui
-  let g:terminal_color_13 = s:nord15_gui
-  let g:terminal_color_14 = s:nord7_gui
-  let g:terminal_color_15 = s:nord6_gui
+  let g:terminal_color_0 = s:nordl1_gui
+  let g:terminal_color_1 = s:nordl11_gui
+  let g:terminal_color_2 = s:nordl14_gui
+  let g:terminal_color_3 = s:nordl13_gui
+  let g:terminal_color_4 = s:nordl9_gui
+  let g:terminal_color_5 = s:nordl15_gui
+  let g:terminal_color_6 = s:nordl8_gui
+  let g:terminal_color_7 = s:nordl5_gui
+  let g:terminal_color_8 = s:nordl3_gui
+  let g:terminal_color_9 = s:nordl11_gui
+  let g:terminal_color_10 = s:nordl14_gui
+  let g:terminal_color_11 = s:nordl13_gui
+  let g:terminal_color_12 = s:nordl9_gui
+  let g:terminal_color_13 = s:nordl15_gui
+  let g:terminal_color_14 = s:nordl7_gui
+  let g:terminal_color_15 = s:nordl6_gui
 endif
 
 "+--- Gutter ---+
-call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
+call s:hi("CursorColumn", "", s:nordl1_gui, "NONE", s:nordl1_term, "", "")
 if g:nord_cursor_line_number_background == 0
-  call s:hi("CursorLineNr", s:nord4_gui, "", "NONE", "", "NONE", "")
+  call s:hi("CursorLineNr", s:nordl4_gui, "", "NONE", "", "NONE", "")
 else
-  call s:hi("CursorLineNr", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
+  call s:hi("CursorLineNr", s:nordl4_gui, s:nordl1_gui, "NONE", s:nordl1_term, "NONE", "")
 endif
-call s:hi("Folded", s:nord3_gui, s:nord1_gui, s:nord3_term, s:nord1_term, s:bold, "")
-call s:hi("FoldColumn", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
-call s:hi("SignColumn", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")
+call s:hi("Folded", s:nordl3_gui, s:nordl1_gui, s:nordl3_term, s:nordl1_term, s:bold, "")
+call s:hi("FoldColumn", s:nordl3_gui, s:nordl0_gui, s:nordl3_term, "NONE", "", "")
+call s:hi("SignColumn", s:nordl1_gui, s:nordl0_gui, s:nordl1_term, "NONE", "", "")
 
 "+--- Navigation ---+
-call s:hi("Directory", s:nord8_gui, "", s:nord8_term, "NONE", "", "")
+call s:hi("Directory", s:nordl8_gui, "", s:nordl8_term, "NONE", "", "")
 
 "+--- Prompt/Status ---+
-call s:hi("EndOfBuffer", s:nord1_gui, "", s:nord1_term, "NONE", "", "")
-call s:hi("ErrorMsg", s:nord4_gui, s:nord11_gui, "NONE", s:nord11_term, "", "")
-call s:hi("ModeMsg", s:nord4_gui, "", "", "", "", "")
-call s:hi("MoreMsg", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("Question", s:nord4_gui, "", "NONE", "", "", "")
+call s:hi("EndOfBuffer", s:nordl1_gui, "", s:nordl1_term, "NONE", "", "")
+call s:hi("ErrorMsg", s:nordl11_gui, s:nordl0_gui, s:nordl11_term, "NONE", "inverse", "")
+call s:hi("ModeMsg", s:nordl4_gui, "", "", "", "", "")
+call s:hi("MoreMsg", s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("Question", s:nordl4_gui, "", "NONE", "", "", "")
 if g:nord_uniform_status_lines == 0
-  call s:hi("StatusLine", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
-  call s:hi("StatusLineNC", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
-  call s:hi("StatusLineTerm", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
-  call s:hi("StatusLineTermNC", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
+  call s:hi("StatusLine", s:nordl8_gui, s:nordl3_gui, s:nordl8_term, s:nordl3_term, "NONE", "")
+  call s:hi("StatusLineNC", s:nordl4_gui, s:nordl1_gui, "NONE", s:nordl1_term, "NONE", "")
+  call s:hi("StatusLineTerm", s:nordl8_gui, s:nordl3_gui, s:nordl8_term, s:nordl3_term, "NONE", "")
+  call s:hi("StatusLineTermNC", s:nordl4_gui, s:nordl1_gui, "NONE", s:nordl1_term, "NONE", "")
 else
-  call s:hi("StatusLine", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
-  call s:hi("StatusLineNC", s:nord4_gui, s:nord3_gui, "NONE", s:nord3_term, "NONE", "")
-  call s:hi("StatusLineTerm", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
-  call s:hi("StatusLineTermNC", s:nord4_gui, s:nord3_gui, "NONE", s:nord3_term, "NONE", "")
+  call s:hi("StatusLine", s:nordl8_gui, s:nordl3_gui, s:nordl8_term, s:nordl3_term, "NONE", "")
+  call s:hi("StatusLineNC", s:nordl4_gui, s:nordl3_gui, "NONE", s:nordl3_term, "NONE", "")
+  call s:hi("StatusLineTerm", s:nordl8_gui, s:nordl3_gui, s:nordl8_term, s:nordl3_term, "NONE", "")
+  call s:hi("StatusLineTermNC", s:nordl4_gui, s:nordl3_gui, "NONE", s:nordl3_term, "NONE", "")
 endif
-call s:hi("WarningMsg", s:nord0_gui, s:nord13_gui, s:nord1_term, s:nord13_term, "", "")
-call s:hi("WildMenu", s:nord8_gui, s:nord1_gui, s:nord8_term, s:nord1_term, "", "")
+call s:hi("WarningMsg", s:nordl0_gui, s:nordl13_gui, s:nordl1_term, s:nordl13_term, "", "")
+call s:hi("WildMenu", s:nordl8_gui, s:nordl1_gui, s:nordl8_term, s:nordl1_term, "", "")
 
 "+--- Search ---+
-call s:hi("IncSearch", s:nord6_gui, s:nord10_gui, s:nord6_term, s:nord10_term, s:underline, "")
-call s:hi("Search", s:nord1_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "NONE", "")
+call s:hi("IncSearch", s:nordl6_gui, s:nordl10_gui, s:nordl6_term, s:nordl10_term, s:underline, "")
+call s:hi("Search", s:nordl1_gui, s:nordl8_gui, s:nordl1_term, s:nordl8_term, "NONE", "")
 
 "+--- Tabs ---+
-call s:hi("TabLine", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
-call s:hi("TabLineFill", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
-call s:hi("TabLineSel", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
+call s:hi("TabLine", s:nordl4_gui, s:nordl1_gui, "NONE", s:nordl1_term, "NONE", "")
+call s:hi("TabLineFill", s:nordl4_gui, s:nordl1_gui, "NONE", s:nordl1_term, "NONE", "")
+call s:hi("TabLineSel", s:nordl8_gui, s:nordl3_gui, s:nordl8_term, s:nordl3_term, "NONE", "")
 
 "+--- Window ---+
-call s:hi("Title", s:nord4_gui, "", "NONE", "", "NONE", "")
+call s:hi("Title", s:nordl4_gui, "", "NONE", "", "NONE", "")
 
 if g:nord_bold_vertical_split_line == 0
-  call s:hi("VertSplit", s:nord2_gui, s:nord0_gui, s:nord3_term, "NONE", "NONE", "")
+  call s:hi("VertSplit", s:nordl2_gui, s:nordl0_gui, s:nordl3_term, "NONE", "NONE", "")
 else
-  call s:hi("VertSplit", s:nord2_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "NONE", "")
+  call s:hi("VertSplit", s:nordl2_gui, s:nordl1_gui, s:nordl3_term, s:nordl1_term, "NONE", "")
 endif
 
 "+----------------------+
 "+ Language Base Groups +
 "+----------------------+
-call s:hi("Boolean", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Character", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("Comment", s:nord3_gui_bright, "", s:nord3_term, "", s:italicize_comments, "")
-call s:hi("Conditional", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Constant", s:nord4_gui, "", "NONE", "", "", "")
-call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Delimiter", s:nord6_gui, "", s:nord6_term, "", "", "")
-call s:hi("Exception", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Float", s:nord15_gui, "", s:nord15_term, "", "", "")
-call s:hi("Function", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("Identifier", s:nord4_gui, "", "NONE", "", "NONE", "")
-call s:hi("Include", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Keyword", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Label", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Number", s:nord15_gui, "", s:nord15_term, "", "", "")
-call s:hi("Operator", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
-call s:hi("PreProc", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
-call s:hi("Repeat", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Special", s:nord4_gui, "", "NONE", "", "", "")
-call s:hi("SpecialChar", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("SpecialComment", s:nord8_gui, "", s:nord8_term, "", s:italicize_comments, "")
-call s:hi("Statement", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("StorageClass", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("String", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("Structure", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Tag", s:nord4_gui, "", "", "", "", "")
-call s:hi("Todo", s:nord13_gui, "NONE", s:nord13_term, "NONE", "", "")
-call s:hi("Type", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
-call s:hi("Typedef", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("Boolean", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("Character", s:nordl14_gui, "", s:nordl14_term, "", "", "")
+call s:hi("Comment", s:nordl3_gui_bright, "", s:nordl3_term, "", s:italicize_comments, "")
+call s:hi("Conditional", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("Constant", s:nordl4_gui, "", "NONE", "", "", "")
+call s:hi("Define", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("Delimiter", s:nordl6_gui, "", s:nordl6_term, "", "", "")
+call s:hi("Exception", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("Float", s:nordl15_gui, "", s:nordl15_term, "", "", "")
+call s:hi("Function", s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("Identifier", s:nordl4_gui, "", "NONE", "", "NONE", "")
+call s:hi("Include", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("Keyword", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("Label", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("Number", s:nordl15_gui, "", s:nordl15_term, "", "", "")
+call s:hi("Operator", s:nordl9_gui, "", s:nordl9_term, "", "NONE", "")
+call s:hi("PreProc", s:nordl9_gui, "", s:nordl9_term, "", "NONE", "")
+call s:hi("Repeat", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("Special", s:nordl4_gui, "", "NONE", "", "", "")
+call s:hi("SpecialChar", s:nordl13_gui, "", s:nordl13_term, "", "", "")
+call s:hi("SpecialComment", s:nordl8_gui, "", s:nordl8_term, "", s:italicize_comments, "")
+call s:hi("Statement", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("StorageClass", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("String", s:nordl14_gui, "", s:nordl14_term, "", "", "")
+call s:hi("Structure", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("Tag", s:nordl4_gui, "", "", "", "", "")
+call s:hi("Todo", s:nordl13_gui, "NONE", s:nordl13_term, "NONE", "", "")
+call s:hi("Type", s:nordl9_gui, "", s:nordl9_term, "", "NONE", "")
+call s:hi("Typedef", s:nordl9_gui, "", s:nordl9_term, "", "", "")
 hi! link Macro Define
 hi! link PreCondit PreProc
 
 "+-----------+
 "+ Languages +
 "+-----------+
-call s:hi("asciidocAttributeEntry", s:nord10_gui, "", s:nord10_term, "", "", "")
-call s:hi("asciidocAttributeList", s:nord10_gui, "", s:nord10_term, "", "", "")
-call s:hi("asciidocAttributeRef", s:nord10_gui, "", s:nord10_term, "", "", "")
-call s:hi("asciidocHLabel", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("asciidocListingBlock", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("asciidocMacroAttributes", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("asciidocOneLineTitle", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("asciidocPassthroughBlock", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("asciidocQuotedMonospaced", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("asciidocTriplePlusPassthrough", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("asciidocAttributeEntry", s:nordl10_gui, "", s:nordl10_term, "", "", "")
+call s:hi("asciidocAttributeList", s:nordl10_gui, "", s:nordl10_term, "", "", "")
+call s:hi("asciidocAttributeRef", s:nordl10_gui, "", s:nordl10_term, "", "", "")
+call s:hi("asciidocHLabel", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("asciidocListingBlock", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("asciidocMacroAttributes", s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("asciidocOneLineTitle", s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("asciidocPassthroughBlock", s:nordl9_gui, "", s:nordl9_term, "", "", "")
+call s:hi("asciidocQuotedMonospaced", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("asciidocTriplePlusPassthrough", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link asciidocAdmonition Keyword
 hi! link asciidocAttributeRef markdownH1
 hi! link asciidocBackslash Keyword
@@ -360,8 +405,8 @@ hi! link asciidocQuotedUnconstrainedBold asciidocQuotedBold
 hi! link asciidocQuotedUnconstrainedEmphasized asciidocQuotedEmphasized
 hi! link asciidocURL markdownLinkText
 
-call s:hi("awkCharClass", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("awkPatterns", s:nord9_gui, "", s:nord9_term, "", s:bold, "")
+call s:hi("awkCharClass", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("awkPatterns", s:nordl9_gui, "", s:nordl9_term, "", s:bold, "")
 hi! link awkArrayElement Identifier
 hi! link awkBoolLogic Keyword
 hi! link awkBrktRegExp SpecialChar
@@ -377,20 +422,20 @@ hi! link awkSpecialCharacter SpecialChar
 hi! link awkSpecialPrintf SpecialChar
 hi! link awkVariables Identifier
 
-call s:hi("cIncluded", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("cIncluded", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link cOperator Operator
 hi! link cPreCondit PreCondit
 
-call s:hi("cmakeGeneratorExpression", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("cmakeGeneratorExpression", s:nordl10_gui, "", s:nordl10_term, "", "", "")
 
 hi! link csPreCondit PreCondit
 hi! link csType Type
 hi! link csXmlTag SpecialComment
 
-call s:hi("cssAttributeSelector", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("cssDefinition", s:nord7_gui, "", s:nord7_term, "", "NONE", "")
-call s:hi("cssIdentifier", s:nord7_gui, "", s:nord7_term, "", s:underline, "")
-call s:hi("cssStringQ", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("cssAttributeSelector", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("cssDefinition", s:nordl7_gui, "", s:nordl7_term, "", "NONE", "")
+call s:hi("cssIdentifier", s:nordl7_gui, "", s:nordl7_term, "", s:underline, "")
+call s:hi("cssStringQ", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link cssAttr Keyword
 hi! link cssBraces Delimiter
 hi! link cssClassName cssDefinition
@@ -400,44 +445,44 @@ hi! link cssPseudoClass cssDefinition
 hi! link cssPseudoClassId cssPseudoClass
 hi! link cssVendor Keyword
 
-call s:hi("dosiniHeader", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("dosiniHeader", s:nordl8_gui, "", s:nordl8_term, "", "", "")
 hi! link dosiniLabel Type
 
-call s:hi("dtBooleanKey", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("dtExecKey", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("dtLocaleKey", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("dtNumericKey", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("dtTypeKey", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("dtBooleanKey", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("dtExecKey", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("dtLocaleKey", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("dtNumericKey", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("dtTypeKey", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link dtDelim Delimiter
 hi! link dtLocaleValue Keyword
 hi! link dtTypeValue Keyword
 
 if g:nord_uniform_diff_background == 0
-  call s:hi("DiffAdd", s:nord14_gui, s:nord0_gui, s:nord14_term, "NONE", "inverse", "")
-  call s:hi("DiffChange", s:nord13_gui, s:nord0_gui, s:nord13_term, "NONE", "inverse", "")
-  call s:hi("DiffDelete", s:nord11_gui, s:nord0_gui, s:nord11_term, "NONE", "inverse", "")
-  call s:hi("DiffText", s:nord9_gui, s:nord0_gui, s:nord9_term, "NONE", "inverse", "")
+  call s:hi("DiffAdd", s:nordl14_gui, s:nordl0_gui, s:nordl14_term, "NONE", "inverse", "")
+  call s:hi("DiffChange", s:nordl13_gui, s:nordl0_gui, s:nordl13_term, "NONE", "inverse", "")
+  call s:hi("DiffDelete", s:nordl11_gui, s:nordl0_gui, s:nordl11_term, "NONE", "inverse", "")
+  call s:hi("DiffText", s:nordl9_gui, s:nordl0_gui, s:nordl9_term, "NONE", "inverse", "")
 else
-  call s:hi("DiffAdd", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
-  call s:hi("DiffChange", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
-  call s:hi("DiffDelete", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
-  call s:hi("DiffText", s:nord9_gui, s:nord1_gui, s:nord9_term, s:nord1_term, "", "")
+  call s:hi("DiffAdd", s:nordl14_gui, s:nordl1_gui, s:nordl14_term, s:nordl1_term, "", "")
+  call s:hi("DiffChange", s:nordl13_gui, s:nordl1_gui, s:nordl13_term, s:nordl1_term, "", "")
+  call s:hi("DiffDelete", s:nordl11_gui, s:nordl1_gui, s:nordl11_term, s:nordl1_term, "", "")
+  call s:hi("DiffText", s:nordl9_gui, s:nordl1_gui, s:nordl9_term, s:nordl1_term, "", "")
 endif
 " Legacy groups for official git.vim and diff.vim syntax
 hi! link diffAdded DiffAdd
 hi! link diffChanged DiffChange
 hi! link diffRemoved DiffDelete
 
-call s:hi("gitconfigVariable", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("gitconfigVariable", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 
-call s:hi("goBuiltins", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("goBuiltins", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link goConstants Keyword
 
-call s:hi("helpBar", s:nord3_gui, "", s:nord3_term, "", "", "")
-call s:hi("helpHyperTextJump", s:nord8_gui, "", s:nord8_term, "", s:underline, "")
+call s:hi("helpBar", s:nordl3_gui, "", s:nordl3_term, "", "", "")
+call s:hi("helpHyperTextJump", s:nordl8_gui, "", s:nordl8_term, "", s:underline, "")
 
-call s:hi("htmlArg", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("htmlLink", s:nord4_gui, "", "", "", "NONE", "NONE")
+call s:hi("htmlArg", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("htmlLink", s:nordl4_gui, "", "", "", "NONE", "NONE")
 hi! link htmlBold Bold
 hi! link htmlEndTag htmlTag
 hi! link htmlItalic Italic
@@ -451,15 +496,15 @@ hi! link htmlSpecialChar SpecialChar
 hi! link htmlTag Keyword
 hi! link htmlTagN htmlTag
 
-call s:hi("javaDocTags", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("javaDocTags", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link javaCommentTitle Comment
 hi! link javaScriptBraces Delimiter
 hi! link javaScriptIdentifier Keyword
 hi! link javaScriptNumber Number
 
-call s:hi("jsonKeyword", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("jsonKeyword", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 
-call s:hi("lessClass", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("lessClass", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link lessAmpersand Keyword
 hi! link lessCssAttribute Delimiter
 hi! link lessFunction Function
@@ -473,15 +518,15 @@ hi! link lispFunc Function
 
 hi! link luaFunc Function
 
-call s:hi("markdownBlockquote", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("markdownCode", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("markdownCodeDelimiter", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("markdownFootnote", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("markdownId", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("markdownIdDeclaration", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("markdownH1", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("markdownLinkText", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("markdownUrl", s:nord4_gui, "", "NONE", "", "NONE", "")
+call s:hi("markdownBlockquote", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("markdownCode", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("markdownCodeDelimiter", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("markdownFootnote", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("markdownId", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("markdownIdDeclaration", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("markdownH1", s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("markdownLinkText", s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("markdownUrl", s:nordl4_gui, "", "NONE", "", "NONE", "")
 hi! link markdownBold Bold
 hi! link markdownBoldDelimiter Keyword
 hi! link markdownFootnoteDefinition markdownFootnote
@@ -499,25 +544,25 @@ hi! link markdownListMarker Keyword
 hi! link markdownRule Keyword
 hi! link markdownHeadingDelimiter Keyword
 
-call s:hi("perlPackageDecl", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("perlPackageDecl", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 
-call s:hi("phpClasses", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("phpClass", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("phpDocTags", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("phpClasses", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("phpClass", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("phpDocTags", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link phpDocCustomTags phpDocTags
 hi! link phpMemberSelector Keyword
 hi! link phpMethod Function
 hi! link phpFunction Function
 
-call s:hi("podCmdText", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("podVerbatimLine", s:nord4_gui, "", "NONE", "", "", "")
+call s:hi("podCmdText", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("podVerbatimLine", s:nordl4_gui, "", "NONE", "", "", "")
 hi! link podFormat Keyword
 
 hi! link pythonBuiltin Type
 hi! link pythonEscape SpecialChar
 
-call s:hi("rubyConstant", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("rubySymbol", s:nord6_gui, "", s:nord6_term, "", s:bold, "")
+call s:hi("rubyConstant", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("rubySymbol", s:nordl6_gui, "", s:nordl6_term, "", s:bold, "")
 hi! link rubyAttribute Identifier
 hi! link rubyBlockParameterList Operator
 hi! link rubyInterpolationDelimiter Keyword
@@ -526,20 +571,20 @@ hi! link rubyLocalVariableOrMethod Function
 hi! link rubyPseudoVariable Keyword
 hi! link rubyRegexp SpecialChar
 
-call s:hi("rustAttribute", s:nord10_gui, "", s:nord10_term, "", "", "")
-call s:hi("rustEnum", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
-call s:hi("rustMacro", s:nord8_gui, "", s:nord8_term, "", s:bold, "")
-call s:hi("rustModPath", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("rustPanic", s:nord9_gui, "", s:nord9_term, "", s:bold, "")
-call s:hi("rustTrait", s:nord7_gui, "", s:nord7_term, "", s:italic, "")
+call s:hi("rustAttribute", s:nordl10_gui, "", s:nordl10_term, "", "", "")
+call s:hi("rustEnum", s:nordl7_gui, "", s:nordl7_term, "", s:bold, "")
+call s:hi("rustMacro", s:nordl8_gui, "", s:nordl8_term, "", s:bold, "")
+call s:hi("rustModPath", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("rustPanic", s:nordl9_gui, "", s:nordl9_term, "", s:bold, "")
+call s:hi("rustTrait", s:nordl7_gui, "", s:nordl7_term, "", s:italic, "")
 hi! link rustCommentLineDoc Comment
 hi! link rustDerive rustAttribute
 hi! link rustEnumVariant rustEnum
 hi! link rustEscape SpecialChar
 hi! link rustQuestionMark Keyword
 
-call s:hi("sassClass", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("sassId", s:nord7_gui, "", s:nord7_term, "", s:underline, "")
+call s:hi("sassClass", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("sassId", s:nordl7_gui, "", s:nordl7_term, "", s:underline, "")
 hi! link sassAmpersand Keyword
 hi! link sassClassChar Delimiter
 hi! link sassControl Keyword
@@ -562,16 +607,16 @@ hi! link shDerefVar Identifier
 hi! link sqlKeyword Keyword
 hi! link sqlSpecial Keyword
 
-call s:hi("vimAugroup", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("vimMapRhs", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("vimNotation", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("vimAugroup", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("vimMapRhs", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("vimNotation", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link vimFunc Function
 hi! link vimFunction Function
 hi! link vimUserFunc Function
 
-call s:hi("xmlAttrib", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("xmlCdataStart", s:nord3_gui_bright, "", s:nord3_term, "", s:bold, "")
-call s:hi("xmlNamespace", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("xmlAttrib", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("xmlCdataStart", s:nordl3_gui_bright, "", s:nordl3_term, "", s:bold, "")
+call s:hi("xmlNamespace", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link xmlAttribPunct Delimiter
 hi! link xmlCdata Comment
 hi! link xmlCdataCdata xmlCdataStart
@@ -580,7 +625,7 @@ hi! link xmlEndTag xmlTagName
 hi! link xmlProcessingDelim Keyword
 hi! link xmlTagName Keyword
 
-call s:hi("yamlBlockMappingKey", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("yamlBlockMappingKey", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link yamlBool Keyword
 hi! link yamlDocumentStart Keyword
 
@@ -590,54 +635,54 @@ hi! link yamlDocumentStart Keyword
 "+--- UI ---+
 " ALE
 " > w0rp/ale
-call s:hi("ALEWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("ALEErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("ALEWarning" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
-call s:hi("ALEError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
+call s:hi("ALEWarningSign", s:nordl13_gui, "", s:nordl13_term, "", "", "")
+call s:hi("ALEErrorSign" , s:nordl11_gui, "", s:nordl11_term, "", "", "")
+call s:hi("ALEWarning" , s:nordl13_gui, "", s:nordl13_term, "", "undercurl", "")
+call s:hi("ALEError" , s:nordl11_gui, "", s:nordl11_term, "", "undercurl", "")
 
 " Coc
 " > neoclide/coc
-call s:hi("CocWarningHighlight" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
-call s:hi("CocErrorHighlight" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
-call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("CocInfoSign" , s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("CocWarningHighlight" , s:nordl13_gui, "", s:nordl13_term, "", "undercurl", "")
+call s:hi("CocErrorHighlight" , s:nordl11_gui, "", s:nordl11_term, "", "undercurl", "")
+call s:hi("CocWarningSign", s:nordl13_gui, "", s:nordl13_term, "", "", "")
+call s:hi("CocErrorSign" , s:nordl11_gui, "", s:nordl11_term, "", "", "")
+call s:hi("CocInfoSign" , s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("CocHintSign" , s:nordl10_gui, "", s:nordl10_term, "", "", "")
 
 " Nvim LSP
 " > neovim/nvim-lsp
-call s:hi("LSPDiagnosticsWarning", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("LSPDiagnosticsError" , s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("LSPDiagnosticsInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("LSPDiagnosticsHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("LSPDiagnosticsWarning", s:nordl13_gui, "", s:nordl13_term, "", "", "")
+call s:hi("LSPDiagnosticsError" , s:nordl11_gui, "", s:nordl11_term, "", "", "")
+call s:hi("LSPDiagnosticsInformation" , s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("LSPDiagnosticsHint" , s:nordl10_gui, "", s:nordl10_term, "", "", "")
 
 " GitGutter
 " > airblade/vim-gitgutter
-call s:hi("GitGutterAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("GitGutterChange", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("GitGutterChangeDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("GitGutterDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("GitGutterAdd", s:nordl14_gui, "", s:nordl14_term, "", "", "")
+call s:hi("GitGutterChange", s:nordl13_gui, "", s:nordl13_term, "", "", "")
+call s:hi("GitGutterChangeDelete", s:nordl11_gui, "", s:nordl11_term, "", "", "")
+call s:hi("GitGutterDelete", s:nordl11_gui, "", s:nordl11_term, "", "", "")
 
 " Signify
 " > mhinz/vim-signify
-call s:hi("SignifySignAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("SignifySignChange", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("SignifySignChangeDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("SignifySignDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("SignifySignAdd", s:nordl14_gui, "", s:nordl14_term, "", "", "")
+call s:hi("SignifySignChange", s:nordl13_gui, "", s:nordl13_term, "", "", "")
+call s:hi("SignifySignChangeDelete", s:nordl11_gui, "", s:nordl11_term, "", "", "")
+call s:hi("SignifySignDelete", s:nordl11_gui, "", s:nordl11_term, "", "", "")
 
 " fugitive.vim
 " > tpope/vim-fugitive
-call s:hi("gitcommitDiscardedFile", s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("gitcommitUntrackedFile", s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("gitcommitSelectedFile", s:nord14_gui, "", s:nord14_term, "", "", "")
+call s:hi("gitcommitDiscardedFile", s:nordl11_gui, "", s:nordl11_term, "", "", "")
+call s:hi("gitcommitUntrackedFile", s:nordl11_gui, "", s:nordl11_term, "", "", "")
+call s:hi("gitcommitSelectedFile", s:nordl14_gui, "", s:nordl14_term, "", "", "")
 
 " davidhalter/jedi-vim
-call s:hi("jediFunction", s:nord4_gui, s:nord3_gui, "", s:nord3_term, "", "")
-call s:hi("jediFat", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, s:underline.s:bold, "")
+call s:hi("jediFunction", s:nordl4_gui, s:nordl3_gui, "", s:nordl3_term, "", "")
+call s:hi("jediFat", s:nordl8_gui, s:nordl3_gui, s:nordl8_term, s:nordl3_term, s:underline.s:bold, "")
 
 " NERDTree
 " > scrooloose/nerdtree
-call s:hi("NERDTreeExecFile", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("NERDTreeExecFile", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link NERDTreeDirSlash Keyword
 hi! link NERDTreeHelp Comment
 
@@ -648,25 +693,25 @@ hi! link CtrlPBufferHid Normal
 
 " vim-clap
 " > liuchengxu/vim-clap
-call s:hi("ClapDir", s:nord4_gui, "", "", "", "", "")
-call s:hi("ClapDisplay", s:nord4_gui, s:nord1_gui, "", s:nord1_term, "", "")
-call s:hi("ClapFile", s:nord4_gui, "", "", "NONE", "", "")
-call s:hi("ClapMatches", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("ClapNoMatchesFound", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("ClapSelected", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
-call s:hi("ClapSelectedSign", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("ClapDir", s:nordl4_gui, "", "", "", "", "")
+call s:hi("ClapDisplay", s:nordl4_gui, s:nordl1_gui, "", s:nordl1_term, "", "")
+call s:hi("ClapFile", s:nordl4_gui, "", "", "NONE", "", "")
+call s:hi("ClapMatches", s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("ClapNoMatchesFound", s:nordl13_gui, "", s:nordl13_term, "", "", "")
+call s:hi("ClapSelected", s:nordl7_gui, "", s:nordl7_term, "", s:bold, "")
+call s:hi("ClapSelectedSign", s:nordl9_gui, "", s:nordl9_term, "", "", "")
 
 let s:clap_matches = [
-        \ [s:nord8_gui,  s:nord8_term] ,
-        \ [s:nord9_gui,  s:nord9_term] ,
-        \ [s:nord10_gui, s:nord10_term] ,
+        \ [s:nordl8_gui,  s:nordl8_term] ,
+        \ [s:nordl9_gui,  s:nordl9_term] ,
+        \ [s:nordl10_gui, s:nordl10_term] ,
         \ ]
-for s:nord_clap_match_i in range(1,12)
-  let clap_match_color = s:clap_matches[s:nord_clap_match_i % len(s:clap_matches) - 1]
-  call s:hi("ClapMatches" . s:nord_clap_match_i, clap_match_color[0], "", clap_match_color[1], "", "", "")
-  call s:hi("ClapFuzzyMatches" . s:nord_clap_match_i, clap_match_color[0], "", clap_match_color[1], "", "", "")
+for s:nordl_clap_match_i in range(1,12)
+  let clap_match_color = s:clap_matches[s:nordl_clap_match_i % len(s:clap_matches) - 1]
+  call s:hi("ClapMatches" . s:nordl_clap_match_i, clap_match_color[0], "", clap_match_color[1], "", "", "")
+  call s:hi("ClapFuzzyMatches" . s:nordl_clap_match_i, clap_match_color[0], "", clap_match_color[1], "", "", "")
 endfor
-unlet s:nord_clap_match_i
+unlet s:nordl_clap_match_i
 
 hi! link ClapCurrentSelection PmenuSel
 hi! link ClapCurrentSelectionSign ClapSelectedSign
@@ -678,24 +723,24 @@ hi! link ClapProviderId Type
 
 " vim-indent-guides
 " > nathanaelkane/vim-indent-guides
-call s:hi("IndentGuidesEven", "", s:nord1_gui, "", s:nord1_term, "", "")
-call s:hi("IndentGuidesOdd", "", s:nord2_gui, "", s:nord3_term, "", "")
+call s:hi("IndentGuidesEven", "", s:nordl1_gui, "", s:nordl1_term, "", "")
+call s:hi("IndentGuidesOdd", "", s:nordl2_gui, "", s:nordl3_term, "", "")
 
 " vim-plug
 " > junegunn/vim-plug
-call s:hi("plugDeleted", s:nord11_gui, "", "", s:nord11_term, "", "")
+call s:hi("plugDeleted", s:nordl11_gui, "", "", s:nordl11_term, "", "")
 
 " vim-signature
 " > kshenoy/vim-signature
-call s:hi("SignatureMarkText", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("SignatureMarkText", s:nordl8_gui, "", s:nordl8_term, "", "", "")
 
 " vim-startify
 " > mhinz/vim-startify
-call s:hi("StartifyFile", s:nord6_gui, "", s:nord6_term, "", "", "")
-call s:hi("StartifyFooter", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("StartifyHeader", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("StartifyNumber", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("StartifyPath", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("StartifyFile", s:nordl6_gui, "", s:nordl6_term, "", "", "")
+call s:hi("StartifyFooter", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("StartifyHeader", s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("StartifyNumber", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("StartifyPath", s:nordl8_gui, "", s:nordl8_term, "", "", "")
 hi! link StartifyBracket Delimiter
 hi! link StartifySlash Normal
 hi! link StartifySpecial Comment
@@ -703,13 +748,13 @@ hi! link StartifySpecial Comment
 "+--- Languages ---+
 " Haskell
 " > neovimhaskell/haskell-vim
-call s:hi("haskellPreProc", s:nord10_gui, "", s:nord10_term, "", "", "")
-call s:hi("haskellType", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("haskellPreProc", s:nordl10_gui, "", s:nordl10_term, "", "", "")
+call s:hi("haskellType", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link haskellPragma haskellPreProc
 
 " JavaScript
 " > pangloss/vim-javascript
-call s:hi("jsGlobalNodeObjects", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
+call s:hi("jsGlobalNodeObjects", s:nordl8_gui, "", s:nordl8_term, "", s:italic, "")
 hi! link jsBrackets Delimiter
 hi! link jsFuncCall Function
 hi! link jsFuncParens Delimiter
@@ -720,13 +765,13 @@ hi! link jsRegexpString SpecialChar
 
 " TypeScript
 " > HerringtonDarkholme/yats.vim
-call s:hi("typescriptBOMWindowMethod", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
-call s:hi("typescriptClassName", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("typescriptDecorator", s:nord12_gui, "", s:nord12_term, "", "", "")
-call s:hi("typescriptInterfaceName", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
-call s:hi("typescriptRegexpString", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("typescriptBOMWindowMethod", s:nordl8_gui, "", s:nordl8_term, "", s:italic, "")
+call s:hi("typescriptClassName", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("typescriptDecorator", s:nordl12_gui, "", s:nordl12_term, "", "", "")
+call s:hi("typescriptInterfaceName", s:nordl7_gui, "", s:nordl7_term, "", s:bold, "")
+call s:hi("typescriptRegexpString", s:nordl13_gui, "", s:nordl13_term, "", "", "")
 " TypeScript JSX
- call s:hi("tsxAttrib", s:nord7_gui, "", s:nord7_term, "", "", "")
+ call s:hi("tsxAttrib", s:nordl7_gui, "", s:nordl7_term, "", "", "")
 hi! link typescriptOperator Operator
 hi! link typescriptBinaryOp Operator
 hi! link typescriptAssign Operator
@@ -761,10 +806,10 @@ hi! link tsxTagName tsxIntrinsicTagName
 
 " Markdown
 " > plasticboy/vim-markdown
-call s:hi("mkdCode", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("mkdFootnote", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("mkdRule", s:nord10_gui, "", s:nord10_term, "", "", "")
-call s:hi("mkdLineBreak", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("mkdCode", s:nordl7_gui, "", s:nordl7_term, "", "", "")
+call s:hi("mkdFootnote", s:nordl8_gui, "", s:nordl8_term, "", "", "")
+call s:hi("mkdRule", s:nordl10_gui, "", s:nordl10_term, "", "", "")
+call s:hi("mkdLineBreak", s:nordl9_gui, "", s:nordl9_term, "", "", "")
 hi! link mkdBold Bold
 hi! link mkdItalic Italic
 hi! link mkdString Keyword
@@ -787,21 +832,21 @@ hi! link mkdDelimiter Keyword
 " > vimwiki/vimwiki
 if !exists("g:vimwiki_hl_headers") || g:vimwiki_hl_headers == 0
   for s:i in range(1,6)
-    call s:hi("VimwikiHeader".s:i, s:nord8_gui, "", s:nord8_term, "", s:bold, "")
+    call s:hi("VimwikiHeader".s:i, s:nordl8_gui, "", s:nordl8_term, "", s:bold, "")
   endfor
 else
-  let s:vimwiki_hcolor_guifg = [s:nord7_gui, s:nord8_gui, s:nord9_gui, s:nord10_gui, s:nord14_gui, s:nord15_gui]
-  let s:vimwiki_hcolor_ctermfg = [s:nord7_term, s:nord8_term, s:nord9_term, s:nord10_term, s:nord14_term, s:nord15_term]
+  let s:vimwiki_hcolor_guifg = [s:nordl7_gui, s:nordl8_gui, s:nordl9_gui, s:nordl10_gui, s:nordl14_gui, s:nordl15_gui]
+  let s:vimwiki_hcolor_ctermfg = [s:nordl7_term, s:nordl8_term, s:nordl9_term, s:nordl10_term, s:nordl14_term, s:nordl15_term]
   for s:i in range(1,6)
     call s:hi("VimwikiHeader".s:i, s:vimwiki_hcolor_guifg[s:i-1] , "", s:vimwiki_hcolor_ctermfg[s:i-1], "", s:bold, "")
   endfor
 endif
 
-call s:hi("VimwikiLink", s:nord8_gui, "", s:nord8_term, "", s:underline, "")
+call s:hi("VimwikiLink", s:nordl8_gui, "", s:nordl8_term, "", s:underline, "")
 hi! link VimwikiHeaderChar markdownHeadingDelimiter
 hi! link VimwikiHR Keyword
 hi! link VimwikiList markdownListMarker
 
 " YAML
 " > stephpy/vim-yaml
-call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("yamlKey", s:nordl7_gui, "", s:nordl7_term, "", "", "")
